@@ -118,6 +118,11 @@
         display: block;
         color: rgb(255, 255, 255)
     }
+    /*MODIFICACION ANIMACION*/
+    .header__flex--768px i:hover{
+        transform: scale(2,2);
+    }
+    /**/
     .header__flex--navbar{
         position: absolute;
         right: 20px;
@@ -276,8 +281,13 @@ nav ul li a{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
-
+/*MODIFICACION ANIMACION ROTACION*/
+.grid__catalogo--hijos img:hover{
+    transform: rotate(10deg);
+}
+/**/
 .text__imagen{
     position: absolute;
     top:50%;
@@ -340,13 +350,26 @@ nav ul li a{
     nav ul{
         text-align: right;
     }
+    /*MODIFICACION ANIMACION*/
     .tittle__pages{
         font-size: 80px;
         text-align: left;
         padding: 10px 20px 0px 20px;
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
     }
+    @keyframes aparecer {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+    /**/
     .subtittle__catalogo{
         font-size: 20px;
     }
@@ -358,6 +381,11 @@ nav ul li a{
         top: 30px;
         right: 20px;
     }
+    /*MODIFICACION ANIMACION*/
+    .footerCatalogo i:hover{
+        transform: scale(2,2);
+    }
+    /**/
     #grid__catalogo{
         width: 95%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -435,13 +463,15 @@ nav ul li a{
 /*.grid__sobreNosotrosHijos{
     border: solid 2px rgb(0, 0, 0);
 }*/
+
+/*MODIFICAION ANIMACION GRADIENTE*/
 .sobreNosotros{
     height: 100vw;
-    background-image: linear-gradient(rgba(247, 243, 243, 0.3), rgba(247, 243, 243, 0.3)),url(./image/pexels-ketut-subiyanto-4545160.jpg);
+    background-image: linear-gradient(rgba(247, 243, 243, 0.3), rgba(247, 243, 243, 0.3)), url(../image/pexels-ketut-subiyanto-4545160.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    opacity: 0.7;
 }
+/**/
 .sobreNosotros div{
     text-align: center;
     padding: 10px;
@@ -595,7 +625,11 @@ nav ul li a{
 
 
 /*CONTACTO*/
-
+/*MODIFICAION ANIMACION GRADIENTE*/
+.bodyContacto{
+    background-image: linear-gradient(to bottom, rgb(175, 170, 170),rgb(255, 255, 255));
+}
+/**/
 .contactoForm{
     text-align: center;
     margin: 10px;
