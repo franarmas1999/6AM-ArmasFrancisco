@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../image/favicom.jpg">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/18ad58d6a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav--black">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/club6am.html">Club 6:AM</a></li>
+                <li><a href="../pages/catalogo.html">Catalogo</a></li>
+                <li><a href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+        <h2 class="tittle__sobreNosotros">CONTACTO</h2>
+        <div class="footerCatalogo footerCatalogo--sn grid__sobreNosotrosHijos">
+            <i class="fa-brands fa-facebook-square"></i><i class="fa-brands fa-instagram-square"></i><i class="fa-brands fa-twitter-square"></i>
+        </div>
+    </header>
+    <main id="gridContacto">
+        <div class="gridContacto__hijos">
+            <form action="enviar.php" method="post" enctype="text/plain"></form>
+            <fieldset class="contactoForm">
+                    <label for="nombre"></label>
+                    Nombre y Apellido: <input type="name" name="nombre" id="name-lastname">
+                    <label for="Identificacion"></label><br>
+                    ID: <select name="Identificacion">
+                    <option value="DNI">DNI</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="Cedula">Cedula</option>
+                    </select>
+                    <label for="pais"></label>
+
+                    <label for="numero-id"></label><br>
+                        Numero ID: <input type="name" name="numero-id">
+                        <label for="email"></label><br>
+                        Email:<input type="email" name="email">
+                        <label for="telefono"></label><br>
+                        Telefono:<input type="number" name="telefono">
+
+                        <p id="text-comentario">Comentario:</p>
+                    <div class="text__area">
+                        <label for="comentario"></label>
+                        <textarea  placeholder="Comentario"></textarea>
+                    </div>
+                    <div class="bottom">
+                        <label for="bottom"></label>
+                        <input class="bottom__submit" type="submit" name="enviar" value="ENVIAR">
+                    </div>
+            </fieldset>
+        </div>
+        
+    </main>
+    <div class="gridContacto__hijos">
+        <footer id="footer__flex" class="footer--black">
+            <div class="footer__flex--hijos contacto">
+                <h4><u>CONTACTO:</u></h4>
+                0351-5488753<i class="fa-brands fa-whatsapp-square whatsapp"></i><br>
+                atencionCliente@6:am.com<i class="fa-solid fa-envelope mail"></i>
+            </div>
+            <div class="footer__flex--hijos ubicacion">
+                <h4><u>UBICACION:</u></h4>
+                Av.Velez Sarsfiel 85<i class="fa-solid fa-location-dot map"></i><br>
+                Av. Valparaiso 2002<i class="fa-solid fa-location-dot map"></i>
+            </div>
+        </footer>
+    </div>
+    <!--
+    <main id="gridContacto">
+        <div class="gridContacto__hijos">
+            <form action="enviar.php" method="post" enctype="text/plain">
+                <fieldset id="form">
+                    
+                    <div class="form__1">
+                        <label for="nombre"></label>
+                        Nombre y Apellido: <input type="name" name="nombre" id="name-lastname">
+                        <label for="Identificacion"></label>
+                        ID: <select name="Identificacion">
+                        <option value="DNI">DNI</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                        <option value="Cedula">Cedula</option>
+                        </select>
+                        <label for="pais"></label>
+                    </div>
+                    
+                    <div class="form__2">
+                        <label for="numero-id"></label>
+                        Numero ID: <input type="name" name="numero-id">
+                        <label for="email"></label>
+                        Email:<input type="email" name="email">
+                        <label for="telefono"></label>
+                        Telefono:<input type="number" name="telefono">
+                    </div>
+                    <p id="text-comentario">Comentario:</p>
+                    <div class="text__area">
+                        <label for="comentario"></label>
+                        <textarea rows="10" cols="77" placeholder="Comentario"></textarea>
+                    </div>
+                    <div class="bottom">
+                        <label for="bottom"></label>
+                        <input class="bottom__submit" type="submit" name="enviar" value="ENVIAR">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="gridContacto__hijos">
+            
+        </div>
+    -->
+    
+
+    </main>
+</body>
+</html>
