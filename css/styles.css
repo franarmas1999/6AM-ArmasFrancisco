@@ -57,7 +57,7 @@
 }
 /*INDEX PORRTADA*/
 .portada{
-    background-image: url(./image/pexels-andrea-piacquadio-3756036.jpg);
+    background-image: url(../image/pexels-andrea-piacquadio-3756036.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -281,13 +281,35 @@ nav ul li a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
-/*MODIFICACION ANIMACION ROTACION*/
+/*MODIFICACON ANIMACION*/
+.grid__catalogo--hijos img:hover{
+    background: #F5A9A9;
+    -webkit-animation: 1s chicle 1;
+}
+
+@-webkit-keyframes chicle{
+    30%{
+        -webkit-transform: 
+            scaleX(1.25)
+            scaleY(0.75);
+    }
+    50%{
+        -webkit-transform: 
+            scaleX(0.75)
+            scaleY(1.25);
+    }
+    60%{
+        -webkit-transform: 
+            scaleX(1.15)
+            scaleY(0.85);
+    }
+}
+/*MODIFICACION ANIMACION ROTACION
 .grid__catalogo--hijos img:hover{
     transform: rotate(10deg);
 }
-/**/
+*/
 .text__imagen{
     position: absolute;
     top:50%;
@@ -350,13 +372,17 @@ nav ul li a{
     nav ul{
         text-align: right;
     }
-    /*MODIFICACION ANIMACION*/
+    
     .tittle__pages{
         font-size: 80px;
         text-align: left;
         padding: 10px 20px 0px 20px;
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
+    }
+    /*MODIFICACION ANIMACION*/
+    .subtittle__catalogo{
+        font-size: 20px;
         animation-duration: 2s;
         animation-name: aparecer;
         animation-iteration-count: infinite;
@@ -370,9 +396,6 @@ nav ul li a{
         }
     }
     /**/
-    .subtittle__catalogo{
-        font-size: 20px;
-    }
     .navbar{
         display: none;
     }
@@ -676,7 +699,7 @@ nav ul li a{
 .portadaClub{
     width: 100vw;
     height: calc(100vh - 130px);
-    background-image: url(./image/comunidad.jpg);
+    background-image: url(../image/comunidad.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
